@@ -1,17 +1,20 @@
 addEventListener("DOMContentLoaded", (e) => {
-//if simple es una estructura de tomar decisiones 
-//estructura
-// if (expresión) { si se cumple la condicion pasara hacer las acciones si no hay termina
-//    }
-//ademas se puede escribir de esta forma 
-//   if (llueve)
-//     alert("Cae agua");
-//al igual que esta 
-//  if (llueve) alert("Cae agua");
- 
+//if-else en cuando al tomar decisiones nos devulve un valor negtaivo 
+//es uno de los mas utilizados
+//if (expresión) { 
+    //acciones a realizar en caso positivo 
+ //} else { 
+    //acciones a realizar en caso negativo 
+ //}
+
 //ejemplo
-if (dia == "lunes") //decimos si la variable dia es igual a lunes
-document.write ("Que tengas un feliz comienzo de semana")//accion a realizar 
 
-
+if (credito >= precio) { //pregunta la condicion y si es positivo se ejecuta
+    document.write("has comprado el artículo " + nuevoArtículo) //enseño compra 
+    carrito += nuevoArticulo 
+    credito -= precio 
+ } else { //si es negativa se realiza otro procedimiento
+    document.write("se te ha acabado el crédito")  
+    window.location = "carritodelacompra.html" 	
+ }
 })
