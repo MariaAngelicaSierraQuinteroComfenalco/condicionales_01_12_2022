@@ -1,10 +1,17 @@
 addEventListener("DOMContentLoaded", (e) => {
-//operador if es una forma mas esquematizacion de if sencillos
-// Variable = (condición) ? valor1 : valor2
-//es la estructura esta tambein se asigna un valor en una variable
+// IF anidados
+//es hacer un if dentro de otro if y asi sucecivamente para muchas situciones es mas efectiva
 //ejemplo
-
-momento = (hora_actual < 12) ? "Antes del mediodía" : "Después del mediodía"
-
+var numero1=23 //variables
+var numero2=63 
+if (numero1 == numero2){ //primer if
+   document.write("Los dos números son iguales") 
+}else{ //primer if-else
+   if (numero1 > numero2) { //segundo if 
+      document.write("El primer número es mayor que el segundo") 
+   }else{ //segundo if-else
+      document.write("El primer número es menor que el segundo") 
+   } 
+}
 
 })
